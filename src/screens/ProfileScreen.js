@@ -1,6 +1,6 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import styles from '../../screen3styles';
+import React from "react";
+import { View, Text } from "react-native";
+import styles from "../styles/screen3styles";
 
 const ProfileScreen = () => (
   <View style={styles.container}>

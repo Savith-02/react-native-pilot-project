@@ -1,6 +1,6 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import styles from '../screen3styles';
+import React from "react";
+import { View, Text } from "react-native";
+import styles from "../src/styles/screen3styles";
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
       <View style={styles.header}>
         <Text style={styles.schoolName}>Samare Driving School</Text>
         <View style={styles.ratingContainer}>
-          <Text style={styles.stars}>{'⭐️⭐️⭐️⭐️⭐️'}</Text>
+          <Text style={styles.stars}>{"⭐️⭐️⭐️⭐️⭐️"}</Text>
           <Text style={styles.rating}> 4.9/5</Text>
         </View>
       </View>
