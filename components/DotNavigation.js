@@ -1,6 +1,6 @@
-import React from 'react';
-import { View } from 'react-native';
-import styles from '../screen3styles';
+import React from "react";
+import { View } from "react-native";
+import styles from "../src/styles/screen3styles";
 
 const DotNavigation = ({ currentIndex }) => {
   return (

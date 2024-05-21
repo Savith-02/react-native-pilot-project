@@ -35,6 +35,7 @@ const LoadingScreen = () => {
     { title: "Go to Notifications", screen: "Notification" },
     { title: "Go to Profile", screen: "Profile" },
     { title: "Go to Search", screen: "Search" },
+    { title: "Go to screen2", screen: "screen2" },
   ];
 
   return (
