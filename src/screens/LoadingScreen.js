@@ -5,14 +5,23 @@ import { useNavigation } from "@react-navigation/native";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "./../../configs/firebaseConfig";
 
-const fetchData = async () => {
-  const querySnapshot = await getDocs(collection(db, "test"));
-  querySnapshot.forEach((doc) => {
-    console.log(`${doc.id} => ${JSON.stringify(doc.data())}`);
+const fetchData = () => {
+  getDocs(collection(db, "test")).then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      console.log(`${doc.id} => ${JSON.stringify(doc.data())}`);
+    });
   });
 };
-
 fetchData();
+
+import { addDoc } from "firebase/firestore";
+const addData = async () => {
+  const docRef = await addDoc(collection(db, "test"), {
+    name: "first Doc",
+  });
+  console.log("Document written with ID: ", docRef.id);
+};
+addData();
 
 const LoadingScreen = () => {
   const navigation = useNavigation();
